@@ -10,5 +10,5 @@ export const DBCon = () => {
     .then(() => {
         console.log("Database connected.");
     })
-    .catch(err => console.log("Failed to connect with Database."));
+    .catch(err => {console.log("Failed to connect with Database.");console.log(err)});
 }
