@@ -22,6 +22,9 @@ app.use(cors({
 
 app.use("/api/v1/user", userRoute)
 app.use("/api/v1/tweet", tweetRoute)
+app.use("/testing", (req,res) => {
+    res.send("done");
+});
 
 app.listen(process.env.PORT, () => {
     DBCon();
