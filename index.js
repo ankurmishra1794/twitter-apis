@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "https://twitter-react-steel.vercel.app",
+    origin: "*",
     credentials: true
 }));
 
